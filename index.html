@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>别踩白块</title>
+        <style type="text/css">
+            #score {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            div {
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+            }
+            #main {
+                width: 400px;
+                height: 400px;
+                background: white;
+                border: 2px solid gray;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+            #con {
+                width: 100%;
+                height: 400px;
+                position: relative;
+                top: -100px;/*隐藏最上层一行*/
+                border-collapse: collapse;
+            }
+            .row {
+                height: 100px;
+                width: 100%;
+            }
+            .cell{
+                height: 100px;
+                width: 100px;
+                float: left;
+            }
+            .black {
+                background: black;
+            }
+            .start{
+                margin-top: 20px;
+                width: 150px;
+                height: 50px;
+                border-radius: 10px;
+                background: yellowgreen;
+                line-height: 50px;
+                text-align: center;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>score</h2>
+        <h2 id="score">0</h2>
+        <div id="main">
+            <div id="con">
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell black"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell black"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell black"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell black"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+        </div>
+        <div class="start">开始游戏</div>
+        <script src="./main.js"></script>
+    </body>
+</html>
